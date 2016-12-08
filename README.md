@@ -11,7 +11,7 @@ Allows RestFB to be used through an http proxy such as squid
 
 ### Running test suite
 ```
-maven test
+mvn test
 
 -------------------------------------------------------
  T E S T S
@@ -41,6 +41,10 @@ mvn package -DskipTests
 [INFO] Building jar: /run/media/user1/centosDev/enw1/restfb-proxy/target/restfb-proxy-0.0.1-SNAPSHOT.jar
 [INFO] BUILD SUCCESS
 ```
+
+### Running unit tests
+* change proxy settings within Test class
+* for Facebook graph tests, change access token to be a user token from [Access Token Tool](https://developers.facebook.com/tools/accesstoken/)
 
 ### Stuff used to make this:
 
